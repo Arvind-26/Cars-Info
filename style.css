@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: sticky;
+}
+
+nav {
+    height: 10vh;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(7, 7, 43, 0.95));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+.options span {
+    align-self: center;
+    font-family: monospace;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.options {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.options ul {
+    list-style-type: none;
+    display: flex;
+    gap: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+.options ul li {
+    transition: ease-in 0.3s;
+}
+
+.options div {
+    background-color: rgba(255, 0, 0, 0);
+    display: none;
+}
+
+.options ul li:hover {
+    box-shadow: 0 0 0 5px white;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+}
+
+.heading {
+    justify-content: center;
+    color: black;
+    font-family: system-ui;
+    font-size: 3.6vw;
+    transform: scale(.5, 1.3);
+    margin: 6vh 0;
+}
+
+.cars {
+    justify-content: space-around;
+}
+
+.cars>button {
+    height: auto;
+    width: 20%;
+    box-shadow: 1px 1px 30px rgb(17, 15, 67);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(7, 7, 43, 0.95));
+    /* background-color: white; */
+    text-align: justify;
+    border-radius: 15px;
+    border: none;
+    transition: ease-in-out 0.5s;
+    color: white;
+}
+
+.cars>button:hover {
+    scale: 1.2;
+}
+
+.cars>button>p {
+    padding: 10px;
+    font-size: smaller;
+}
+
+.cars>button>div {
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.more {
+    justify-content: center;
+    color: black;
+    font-family: system-ui;
+    font-size: 3.3vw;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+
+}
+
+.brands {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+}
+
+.brands>a {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: rgba(7, 7, 43, 0.95);
+}
+
+.footer {
+    padding-top: 20px;
+    margin-top: 20px;
+    height: 30vh;
+    background-color: rgb(49, 49, 49);
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer>h5 {
+    text-align: center;
+    margin: 2% 15%;
+    font-weight: 100;
+}
+
+.footer>h4 {
+    text-align: center;
+}
+
+.footer>span {
+    display: flex;
+    justify-content: center;
+}
+
+.footer>span>img {
+    background-color: rgba(49, 75, 98, 0);
+    border: none;
+    padding: 5px;
+}
+
+@media (max-width:800px) {
+    .cars {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cars>button {
+        height: auto;
+        width: 60%;
+    }
+
+    .options ul {
+        display: none;
+    }
+
+    .options div {
+        display: block;
+    }
+
+    .footer>h5 {
+        margin: 2%;
+    }
+
+    .options span {
+        font-size: 18px;
+    }
+
+    .options > img{
+        width: 70px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: large;
+        margin: 8vh 4vw ;
+        transform: scale(1,1);
+    }
+
+    .more{
+        text-align: center;
+        font-size: x-large;
+    }
+    
+}
