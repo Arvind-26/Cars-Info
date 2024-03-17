@@ -13,10 +13,10 @@ The Cars Website is designed to be a central hub for car enthusiasts to learn ab
 
 ## Screenshot
 ### Desktop view
-<img src="../Images/desktop_view.jpeg">
+<img src="../main/Images/desktop_view.jpeg">
 
 ### Mobile view
-<img src="../Images/mobile_view.jpg">
+<img src="../main/Images/mobile_view.jpg">
 
 ## How to use
 * Clone the repository to your local machine.
